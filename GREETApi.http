@@ -1,0 +1,6 @@
+@GREETApi_HostAddress = http://localhost:5100
+
+GET {{GREETApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

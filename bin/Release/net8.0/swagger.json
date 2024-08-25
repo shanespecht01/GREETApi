@@ -1,0 +1,2237 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "GREETApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/GREET/send-CanolaHEFA-data": {
+      "post": {
+        "tags": [
+          "GREET"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CanolaHEFA"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/GREET/send-CornATJethanol-data": {
+      "post": {
+        "tags": [
+          "GREET"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CornATJethanol"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/GREET/send-DistillersCornOilHEFA-data": {
+      "post": {
+        "tags": [
+          "GREET"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/DistillersCornOilHEFA"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/GREET/send-SoybeanHEFA-data": {
+      "post": {
+        "tags": [
+          "GREET"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/SoybeanHEFA"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/GREET/send-SugarcaneATJethanol-data": {
+      "post": {
+        "tags": [
+          "GREET"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/SugarcaneATJethanol"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/GREET/send-TallowHEFA-data": {
+      "post": {
+        "tags": [
+          "GREET"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/TallowHEFA"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/GREET/send-UCOHEFA-data": {
+      "post": {
+        "tags": [
+          "GREET"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UCOHEFA"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/GREET/send-data": {
+      "post": {
+        "tags": [
+          "GREET"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "dataType"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": { }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/GREET/get-data": {
+      "get": {
+        "tags": [
+          "GREET"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/VB/GetVBMessage": {
+      "get": {
+        "tags": [
+          "VB"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/VB/Connect": {
+      "get": {
+        "tags": [
+          "VB"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/WeatherForecast"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CanolaHEFA": {
+      "type": "object",
+      "properties": {
+        "gwP_of_GHG_Ref": {
+          "type": "string"
+        },
+        "saF_Electricity_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_45VModeled_H2_CI": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Poplar_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Soy_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Sugarcane_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_45VModeled_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_RNG_LFG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "sorghum_LUC_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_EtOH_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornStoverEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_HBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_MiscanthusEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_PoplarEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_SugarCaneEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WoodResidueEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "greeT_ICAO_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Canola_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "hefA_feed_usage": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Barge_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Barge_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Rail_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Rail_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Truck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_BDShare_Canola": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_ConvDieselShare_Canola": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_RDShare_Canola": {
+          "format": "double",
+          "type": "number"
+        },
+        "blend_Type_Canola": {
+          "format": "double",
+          "type": "number"
+        },
+        "canola_HEFA_Electricity": {
+          "format": "double",
+          "type": "number"
+        },
+        "canola_HEFA_Hydrogen": {
+          "format": "double",
+          "type": "number"
+        },
+        "canola_HEFA_Natural_gas": {
+          "format": "double",
+          "type": "number"
+        },
+        "canola_Oil_Extraction_Allocation": {
+          "format": "double",
+          "type": "number"
+        },
+        "green_Ammonia_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "hefA_Allocation": {
+          "format": "double",
+          "type": "number"
+        },
+        "motor_Type_Canola": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "CornATJethanol": {
+      "type": "object",
+      "properties": {
+        "gwP_of_GHG_Ref": {
+          "type": "string"
+        },
+        "saF_Electricity_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_45VModeled_H2_CI": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Poplar_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Soy_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Sugarcane_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_45VModeled_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_RNG_LFG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "sorghum_LUC_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_EtOH_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornStoverEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_HBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_MiscanthusEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_PoplarEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_SugarCaneEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WoodResidueEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "greeT_ICAO_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Canola_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etJ_Standalone_Electricity": {
+          "format": "double",
+          "type": "number"
+        },
+        "etJ_Standalone_Ethanol": {
+          "format": "double",
+          "type": "number"
+        },
+        "etJ_Standalone_Hydrogen": {
+          "format": "double",
+          "type": "number"
+        },
+        "etJ_Standalone_NG": {
+          "format": "double",
+          "type": "number"
+        },
+        "ethanol_ETJ_distributed_Catalysts": {
+          "format": "double",
+          "type": "number"
+        },
+        "green_Ammonia_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Barge_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Barge_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Rail_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Rail_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Truck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Truckl_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_BDShare_Corn": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_ConvDieselShare_Corn": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_RDShare_Corn": {
+          "format": "double",
+          "type": "number"
+        },
+        "blend_Type_Corn": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_Ethanol_CCS": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_Ethanol_CCS_CaptureRate": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_Ethanol_CCS_Electricity": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_Ethanol_CCS_Fermentation_CO2": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_EtOH_Electricity_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_Fermentation_Coal": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_Fermentation_Corn": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_Fermentation_Electricity": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_Fermentation_Natural_gas": {
+          "format": "double",
+          "type": "number"
+        },
+        "distributed_ETJ_Allocation": {
+          "format": "double",
+          "type": "number"
+        },
+        "jetFuel_ETJet_EthanolFeedstock": {
+          "format": "double",
+          "type": "number"
+        },
+        "motor_Type_Corn": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_Heat_Corn_Ethanol": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_RNG_LFG_Heat_Corn_Ethanol": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Ethanol_Barge_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Ethanol_Barge_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Ethanol_Heavy_heavy_truck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Ethanol_Heavy_heavy_truck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Ethanol_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Ethanol_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Ethanol_Rail_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Ethanol_Rail_Share": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "DataType": {
+      "format": "int32",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "type": "integer"
+    },
+    "DateOnly": {
+      "type": "object",
+      "properties": {
+        "year": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "month": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "day": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dayOfWeek": {
+          "$ref": "#/definitions/DayOfWeek"
+        },
+        "dayOfYear": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "dayNumber": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        }
+      }
+    },
+    "DayOfWeek": {
+      "format": "int32",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "type": "integer"
+    },
+    "DistillersCornOilHEFA": {
+      "type": "object",
+      "properties": {
+        "gwP_of_GHG_Ref": {
+          "type": "string"
+        },
+        "saF_Electricity_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_45VModeled_H2_CI": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Poplar_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Soy_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Sugarcane_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_45VModeled_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_RNG_LFG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "sorghum_LUC_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_EtOH_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornStoverEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_HBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_MiscanthusEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_PoplarEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_SugarCaneEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WoodResidueEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "greeT_ICAO_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Canola_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "hefA_feed_usage": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Barge_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Barge_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Rail_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Rail_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Truck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "cornOil_HEFA_Electricity": {
+          "format": "double",
+          "type": "number"
+        },
+        "cornOil_HEFA_Hydrogen": {
+          "format": "double",
+          "type": "number"
+        },
+        "cornOil_HEFA_Natural_gas": {
+          "format": "double",
+          "type": "number"
+        },
+        "hefA_Allocation": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "SoybeanHEFA": {
+      "type": "object",
+      "properties": {
+        "gwP_of_GHG_Ref": {
+          "type": "string"
+        },
+        "saF_Electricity_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_45VModeled_H2_CI": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Poplar_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Soy_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Sugarcane_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_45VModeled_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_RNG_LFG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "sorghum_LUC_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_EtOH_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornStoverEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_HBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_MiscanthusEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_PoplarEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_SugarCaneEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WoodResidueEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "greeT_ICAO_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Canola_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "hefA_feed_usage": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Barge_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Barge_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Rail_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Rail_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Truck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_BDShare_Soybean": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_ConvDieselShare_Soybean": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_RDShare_Soybean": {
+          "format": "double",
+          "type": "number"
+        },
+        "blend_Type_Soybean": {
+          "format": "double",
+          "type": "number"
+        },
+        "green_Ammonia_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "motor_Type_Soybean": {
+          "format": "double",
+          "type": "number"
+        },
+        "soybean_HEFA_Electricity": {
+          "format": "double",
+          "type": "number"
+        },
+        "soybean_HEFA_H2": {
+          "format": "double",
+          "type": "number"
+        },
+        "soybean_HEFA_Natural_gas": {
+          "format": "double",
+          "type": "number"
+        },
+        "soybean_Oil_Extraction_Allocation": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "SugarcaneATJethanol": {
+      "type": "object",
+      "properties": {
+        "gwP_of_GHG_Ref": {
+          "type": "string"
+        },
+        "saF_Electricity_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_45VModeled_H2_CI": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Poplar_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Soy_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Sugarcane_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_45VModeled_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_RNG_LFG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "sorghum_LUC_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_EtOH_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornStoverEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_HBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_MiscanthusEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_PoplarEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_SugarCaneEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "greeT_ICAO_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Canola_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etJ_Standalone_Electricity": {
+          "format": "double",
+          "type": "number"
+        },
+        "etJ_Standalone_Ethanol": {
+          "format": "double",
+          "type": "number"
+        },
+        "etJ_Standalone_Hydrogen": {
+          "format": "double",
+          "type": "number"
+        },
+        "etJ_Standalone_NG": {
+          "format": "double",
+          "type": "number"
+        },
+        "ethanol_ETJ_distributed_Catalysts": {
+          "format": "double",
+          "type": "number"
+        },
+        "green_Ammonia_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Barge_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Barge_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Rail_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Rail_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Truck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_ETJ_SAF_Truckl_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_BDShare_Sugarcane": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_ConvDieselShare_Sugarcane": {
+          "format": "double",
+          "type": "number"
+        },
+        "agTractor_RDShare_Sugarcane": {
+          "format": "double",
+          "type": "number"
+        },
+        "blend_Type_Sugarcane": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WoodResidueEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "motor_Type_Sugarcane": {
+          "format": "double",
+          "type": "number"
+        },
+        "sugracane_Fermentation_Coal": {
+          "format": "double",
+          "type": "number"
+        },
+        "sugracane_Fermentation_CoProduced_Electricity": {
+          "format": "double",
+          "type": "number"
+        },
+        "sugracane_Fermentation_Electricity": {
+          "format": "double",
+          "type": "number"
+        },
+        "sugracane_Fermentation_Natural_gas": {
+          "format": "double",
+          "type": "number"
+        },
+        "sugracane_Fermentation_Residual_oil": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Brazil_Barge_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Brazil_Barge_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Brazil_Heavy_Truck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Brazil_Heavy_Truck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Brazil_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Brazil_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Brazil_Rail_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Brazil_Rail_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Ethanol_Barge_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Ethanol_Barge_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Ethanol_Heavy_Truck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Ethanol_Heavy_Truck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Ethanol_Ocean_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Ethanol_Ocean_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Ethanol_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Ethanol_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Ethanol_Rail_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_Sugarcane_Ethanol_Rail_Share": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "TallowHEFA": {
+      "type": "object",
+      "properties": {
+        "gwP_of_GHG_Ref": {
+          "type": "string"
+        },
+        "saF_Electricity_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_45VModeled_H2_CI": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Poplar_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Soy_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Sugarcane_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_45VModeled_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_RNG_LFG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "sorghum_LUC_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_EtOH_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornStoverEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_HBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_MiscanthusEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_PoplarEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_SugarCaneEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WoodResidueEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "greeT_ICAO_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Canola_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "hefA_feed_usage": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Barge_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Barge_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Rail_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Rail_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Truck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "tallow_HEFA_Electricity": {
+          "format": "double",
+          "type": "number"
+        },
+        "tallow_HEFA_Hydrogen": {
+          "format": "double",
+          "type": "number"
+        },
+        "tallow_HEFA_Natural_gas": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "UCOHEFA": {
+      "type": "object",
+      "properties": {
+        "gwP_of_GHG_Ref": {
+          "type": "string"
+        },
+        "saF_Electricity_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_45VModeled_H2_CI": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_45VModeled_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_TubeTrailer_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_LiquidTruck_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_H2_Transportation_NG_SMR_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Miscanthus_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Poplar_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Soy_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Sugarcane_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Switchgrass_FT_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_45VModeled_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_H2_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_NG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "share_RNG_LFG_Heat_SAF": {
+          "format": "double",
+          "type": "number"
+        },
+        "sorghum_LUC_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "corn_EtOH_Heat_Source_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_CornStoverEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_HBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_MiscanthusEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_PoplarEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_SugarCaneEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WBiomassEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "etOH_WoodResidueEtOH_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "greeT_ICAO_Selector": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Canola_HEFA_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ATJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "saF_Corn_ETJ_LandChange_Option": {
+          "format": "double",
+          "type": "number"
+        },
+        "hefA_feed_usage": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Barge_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Barge_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Pipeline_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Pipeline_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Rail_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Rail_Share": {
+          "format": "double",
+          "type": "number"
+        },
+        "t_D_HEFA_SAF_Truck_Distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "ucO_HEFA_Electricity": {
+          "format": "double",
+          "type": "number"
+        },
+        "ucO_HEFA_Hydrogen": {
+          "format": "double",
+          "type": "number"
+        },
+        "ucO_HEFA_Natural_gas": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "WeatherForecast": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "$ref": "#/definitions/DateOnly"
+        },
+        "temperatureC": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "temperatureF": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "summary": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
