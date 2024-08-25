@@ -239,3 +239,4 @@ D:\Moonlight\GREET\GREETApi\obj\Release\net8.0\refint\GREETApi.dll
 D:\Moonlight\GREET\GREETApi\obj\Release\net8.0\GREETApi.pdb
 D:\Moonlight\GREET\GREETApi\obj\Release\net8.0\GREETApi.genruntimeconfig.cache
 D:\Moonlight\GREET\GREETApi\obj\Release\net8.0\ref\GREETApi.dll
+D:\Moonlight\GREET\GREETApi\obj\Release\net8.0\GREETApi.sourcelink.json
