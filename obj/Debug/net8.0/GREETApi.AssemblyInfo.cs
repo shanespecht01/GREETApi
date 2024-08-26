@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GREETApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cda0ef1070c46e1de1b3500d369d0d41e896c616")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31570f5c5b505af13808062b9e1b2061ec48112f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GREETApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GREETApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
