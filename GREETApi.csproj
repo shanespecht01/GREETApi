@@ -25,7 +25,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GREETDataAccess\GREETDataAccess.csproj" />
-    <ProjectReference Include="..\GREETLibrary\GREETLibrary.vbproj" />
   </ItemGroup>
 
 </Project>

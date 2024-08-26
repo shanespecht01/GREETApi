@@ -30,8 +30,6 @@ D:\Moonlight\GREET\GREETApi\obj\Debug\net8.0\refint\GREETApi.dll
 D:\Moonlight\GREET\GREETApi\obj\Debug\net8.0\GREETApi.pdb
 D:\Moonlight\GREET\GREETApi\obj\Debug\net8.0\GREETApi.genruntimeconfig.cache
 D:\Moonlight\GREET\GREETApi\obj\Debug\net8.0\ref\GREETApi.dll
-D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\GREETLibrary.dll
-D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\GREETLibrary.pdb
 D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
@@ -236,7 +234,6 @@ D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Secu
 D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
 D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
-D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\NLog.dll
 D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\System.IO.Packaging.dll
 D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\Microsoft.Office.Interop.Excel.dll
 D:\Moonlight\GREET\GREETApi\obj\Debug\net8.0\GREETApi.sourcelink.json
