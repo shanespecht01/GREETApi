@@ -239,3 +239,4 @@ D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dl
 D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\NLog.dll
 D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\System.IO.Packaging.dll
 D:\Moonlight\GREET\GREETApi\bin\Debug\net8.0\Microsoft.Office.Interop.Excel.dll
+D:\Moonlight\GREET\GREETApi\obj\Debug\net8.0\GREETApi.sourcelink.json
