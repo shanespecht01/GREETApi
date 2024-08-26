@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9wetSu0kwtyXnheaeGUiLx9FK5zxEEIuDh68ZDdGEgvkyxjw3/f2ETeuLJoSvE5LTCP8/l25wKaiS/YAAk49Lg==",
+  "dgSpecHash": "numsudfOHLNvSXvYFA3nNTbyym/0uioDrt0rmMsw05OwMvfvnmF4bqJLOm/dpNSawNy7a5xDOs5chx22zD1F6A==",
   "success": true,
   "projectFilePath": "D:\\Moonlight\\GREET\\GREETApi\\GREETApi.csproj",
   "expectedPackageFiles": [
@@ -109,7 +109,6 @@
     "C:\\Users\\Specht's\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\Specht's\\.nuget\\packages\\mono.texttemplating\\2.3.1\\mono.texttemplating.2.3.1.nupkg.sha512",
     "C:\\Users\\Specht's\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Specht's\\.nuget\\packages\\nlog\\5.3.2\\nlog.5.3.2.nupkg.sha512",
     "C:\\Users\\Specht's\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\Specht's\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.4\\npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",
     "C:\\Users\\Specht's\\.nuget\\packages\\nuget.common\\6.9.1\\nuget.common.6.9.1.nupkg.sha512",
