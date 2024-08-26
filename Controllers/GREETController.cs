@@ -1,7 +1,6 @@
 ﻿using GREETApi.Services;
 using GREETApi.Models.SendToGREET1;
 using Microsoft.AspNetCore.Mvc;
-using DocumentFormat.OpenXml.Office2016.Excel;
 
 namespace GREETApi.Controllers
 {
