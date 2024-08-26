@@ -206,7 +206,7 @@ namespace GREETApi.Controllers
         }
 
         [HttpGet("get-data")]
-        public IActionResult GetData()
+        public IActionResult GetData() 
         {
             try
             {
